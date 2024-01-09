@@ -11,7 +11,7 @@ use Monolog\LogRecord;
 use Monolog\Processor\PsrLogMessageProcessor;
 use Throwable;
 
-class DatabaseHandler extends AbstractProcessingHandler
+class RabbitHandler extends AbstractProcessingHandler
 {
     protected string $dateFormat = 'Y-m-d H:i:s';
     private array    $record;

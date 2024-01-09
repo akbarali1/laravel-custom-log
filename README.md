@@ -6,8 +6,8 @@
  ...
  
  'db' => [
-        'driver' => 'custom',
-        'via'    => DatabaseLogger::class,
+        'driver' => 'rabbit_log',
+        'via'    => RabbitLogger::class,
         'level'  => env('LOG_LEVEL', 'debug'),
     ],
 ]
@@ -18,3 +18,5 @@
 'enableRabbitLog'   => env('ENABLE_RABBIT_LOG', false),
 ```
 `.env` `ENABLE_RABBIT_LOG=true` added
+
+`.env` change `LOG_CHANNEL=rabbit_log` added

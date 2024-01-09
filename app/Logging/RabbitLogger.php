@@ -4,7 +4,7 @@ namespace App\Logging;
 
 use Monolog\Logger;
 
-class DatabaseLogger
+class RabbitLogger
 {
     /**
      * Create a custom Monolog instance.

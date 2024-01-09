@@ -14,7 +14,7 @@ class RabbitLogger
     public function __invoke(array $config): Logger
     {
         return new Logger('Rabbit Logs', [
-            new DatabaseHandler(),
+            new RabbitHandler(),
         ]);
     }
 

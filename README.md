@@ -17,6 +17,4 @@
 ```php
 'enableRabbitLog'   => env('ENABLE_RABBIT_LOG', false),
 ```
-`.env` `ENABLE_RABBIT_LOG=true` added
-
-`.env` change `LOG_CHANNEL=rabbit` added
+`.env` added  `ENABLE_RABBIT_LOG=true` and `LOG_CHANNEL=rabbit` change  
